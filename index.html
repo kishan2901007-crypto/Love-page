@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Forever Love ❤️</title>
+    <style>
+        :root { --pink: #fceef5; --love: #ff4d6d; --text: #4a4a4a; }
+        body { margin: 0; background: var(--pink); font-family: 'Georgia', serif; scroll-behavior: smooth; overflow-x: hidden; text-align: center; color: var(--text); }
+        section { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px; box-sizing: border-box; }
+        .hidden { display: none; }
+        
+        /* Wax Seal */
+        .wax-seal { width: 180px; cursor: pointer; animation: heartbeat 1.5s infinite; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15)); }
+        @keyframes heartbeat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+        /* Polaroid Frames */
+        .polaroid { background: white; padding: 15px 15px 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 280px; border: 1px solid #ddd; margin: 20px 0; }
+        .polaroid img { width: 100%; height: 350px; object-fit: cover; background: #eee; }
+        .caption { margin-top: 15px; font-style: italic; font-size: 0.9rem; color: #777; }
+
+        /* Animations */
+        .lotus { font-size: 5rem; animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        
+        .btn { margin-top: 25px; padding: 15px 40px; background: var(--love); color: white; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn:hover { transform: scale(1.1); background: #e63958; }
+
+        /* Letter Styling */
+        .letter { background: #fffcf2; padding: 40px; border-radius: 5px; max-width: 600px; text-align: left; line-height: 1.8; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border-left: 8px solid var(--love); font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <audio id="bgMusic" loop><source src="music.mp3" type="audio/mpeg"></audio>
+
+    <section id="s1">
+        <img src="https://i.ibb.co/WhfksjC/bc4a03e0398b55845418c99fc0cc2a75.jpg" class="wax-seal" onclick="start()">
+        <h1 style="color:var(--love)">My Dearest Kankshitha</h1>
+        <p>A journey through my heart is waiting for you...<br><b>Tap the seal to begin</b></p>
+    </section>
+
+    <section id="s2" class="hidden">
+        <div class="lotus">🪷</div>
+        <h2>The Bloom of My Life</h2>
+        <p>Just like a lotus, you bring beauty to everything you touch.<br>2025 was the year my world truly started to bloom.</p>
+        <button class="btn" onclick="next('s3')">Step Into Our Memories →</button>
+    </section>
+
+    <section id="s3" class="hidden">
+        <div class="polaroid" style="transform: rotate(-3deg);">
+            <img src="pic1.jpg" alt="Photo 1">
+            <div class="caption">The way you smile at me...</div>
+        </div>
+        <button class="btn" onclick="next('s4')">Keep Going ↓</button>
+    </section>
+
+    <section id="s4" class="hidden">
+        <div class="polaroid" style="transform: rotate(3deg);">
+            <img src="pic2.jpg" alt="Photo 2">
+            <div class="caption">In your eyes, I find my home.</div>
+        </div>
+        <button class="btn" onclick="next('s5')">And There's More ↓</button>
+    </section>
+
+    <section id="s5" class="hidden">
+        <div class="polaroid" style="transform: rotate(-1deg);">
+            <img src="pic3.jpg" alt="Photo 3">
+        </div>
+        <div class="polaroid" style="transform: rotate(1deg);">
+            <img src="pic4.jpg" alt="Photo 4">
+        </div>
+        <p>Every small moment with you is a huge treasure.</p>
+        <button class="btn" onclick="next('s6')">Almost There →</button>
+    </section>
+
+    <section id="s6" class="hidden">
+        <div class="polaroid" style="transform: rotate(-2deg);">
+            <img src="pic5.jpg" alt="Photo 5">
+        </div>
+        <div class="polaroid" style="transform: rotate(2deg);">
+            <img src="pic6.jpg" alt="Photo 6">
+        </div>
+        <button class="btn" onclick="next('s7')">Make a New Year Wish →</button>
+    </section>
+
+    <section id="s7" class="hidden">
+        <div style="font-size:7rem; cursor:pointer" onclick="blow()">
+            🎂<div id="candle" style="display:inline-block">🕯️🔥</div>
+        </div>
+        <h2 id="wishHead">Close your eyes and wish for 2026...</h2>
+        <p id="wishSub">Tap the cake to blow out the candle.</p>
+        <button class="btn hidden" id="cakeBtn" onclick="next('s8')">Finally, My Heart to Yours ↓</button>
+    </section>
+
+    <section id="s8" class="hidden">
+        <div class="letter">
+            <h2 style="color:var(--love); margin-top:0;">My Eternal Kankshitha,</h2>
+            <p>As the clock ticks toward 2026, I found myself looking back at every second we spent together. They say home is a place, but for me, <b>home has always been you.</b></p>
+            
+            <p>Your love is the anchor that keeps me steady in every storm. Your laughter is the music I want to wake up to every single morning for the rest of my life. I promise to hold your hand tighter this year, to listen more deeply, and to love you with a passion that never fades.</p>
+            
+            <p>You aren't just my partner; you are my soul's twin. In 2026, I want to build more dreams with you, travel to places we've never been, and fall in love with you all over again, every single day. My heart is, and will always be, completely yours.</p>
+            
+            <p style="text-align: right;">Forever Yours,<br><strong>Kishan</strong></p>
+        </div>
+        <button class="btn" onclick="next('s9')">One Last Thing... ✨</button>
+    </section>
+
+    <section id="s9" class="hidden">
+        <h1 style="font-size: 4rem; color: var(--love); margin: 0;">HAPPY 2026!</h1>
+        <div style="font-size: 5rem;">🥂✨💖</div>
+        <p style="font-size: 1.5rem;">To us, forever.</p>
+    </section>
+
+    <script>
+        function start() { document.getElementById('bgMusic').play(); next('s2'); }
+        function next(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+        function blow() {
+            document.getElementById('candle').innerHTML = "🕯️💨";
+            document.getElementById('wishHead').innerHTML = "Wish Granted! ❤️";
+            document.getElementById('wishSub').innerHTML = "May all your dreams come true this year.";
+            document.getElementById('cakeBtn').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
